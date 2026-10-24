@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Netzline Tech-Systems Solutions Ltd | Engineering Consultant &amp; Contractors</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0A1628;--ink:#060D18;--green:#0B5D4B;--teal:#14A38B;--cyan:#22D3EE;--blue:#2563EB;--grey:#EEF2F6;--text:#F4F8FB;--muted:#9FB3C8;--line:rgba(34,211,238,.35);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--ink);color:var(--text);font-family:Montserrat,Arial,Helvetica,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.band{height:5px;background:linear-gradient(90deg,var(--green),var(--blue))}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(6,13,24,.93);backdrop-filter:blur(8px);border-bottom:1px solid #16263B}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:16px}
+.logo{text-decoration:none;line-height:1.1}
+.logo b{display:block;font-weight:800;font-size:20px;letter-spacing:.14em}
+.logo b i{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--cyan);margin-right:10px}
+.logo small{font-size:10px;color:var(--muted);letter-spacing:.12em}
+nav ul{display:flex;gap:26px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:500}
+nav ul a{text-decoration:none;color:var(--muted)}nav ul a:hover{color:var(--cyan)}
+.btn{display:inline-block;background:var(--teal);color:var(--ink);font:700 15px Montserrat,Arial,sans-serif;padding:14px 28px;border-radius:2px;text-decoration:none;transition:background .2s}
+.btn:hover{background:var(--cyan)}
+.btn.ghost{background:transparent;color:var(--text);border:1px solid var(--line)}
+.btn.ghost:hover{background:rgba(34,211,238,.12)}
+:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
+.hero{position:relative;overflow:hidden;padding:96px 0 88px}
+.rings{position:absolute;right:-120px;top:-30px;width:560px;max-width:92vw;opacity:.5;pointer-events:none}
+.hero h1{position:relative;font-size:clamp(38px,7vw,70px);line-height:1.04;font-weight:800;margin:0 0 20px;max-width:11em}
+.hero .sub{position:relative;font-size:19px;font-weight:700;color:var(--cyan);margin:0 0 10px}
+.hero p{position:relative;font-size:18px;color:var(--muted);max-width:34em;margin:0 0 32px}
+.cta{position:relative;display:flex;gap:14px;flex-wrap:wrap}
+.metrics{background:var(--navy);border-top:1px solid #16263B;border-bottom:1px solid #16263B}
+.metrics .wrap{display:grid;grid-template-columns:repeat(4,1fr)}
+.metric{padding:26px 20px;border-left:1px solid #16263B}.metric:first-child{border-left:0}
+.metric b{display:block;font-size:26px;color:var(--cyan);font-weight:800;line-height:1.2}
+.metric span{font-size:13px;color:var(--muted)}
+section{padding:84px 0}
+h2{font-size:clamp(26px,4vw,38px);line-height:1.15;margin:0 0 14px;font-weight:800}
+.lead{color:var(--muted);max-width:38em;margin:0 0 40px}
+.light{background:var(--grey);color:var(--navy)}.light .lead{color:#4A5E73}
+.grid{display:grid;gap:1px;background:#16263B;border:1px solid #16263B}
+.g3{grid-template-columns:repeat(3,1fr)}.g4{grid-template-columns:repeat(4,1fr)}.g5{grid-template-columns:repeat(5,1fr)}
+.card{background:var(--navy);padding:26px 22px;border-top:3px solid var(--teal)}
+.card h3{font-size:17px;margin:0 0 10px;color:var(--cyan)}
+.card p{margin:0;font-size:15px;color:var(--muted)}
+ul.tick{list-style:none;margin:0;padding:0;font-size:14.5px;color:var(--text)}
+ul.tick li{padding:4px 0 4px 20px;position:relative}
+ul.tick li::before{content:"";position:absolute;left:0;top:13px;width:8px;height:8px;border-radius:50%;background:var(--cyan)}
+.light .grid{background:#D5DEE7;border-color:#D5DEE7}
+.light .card{background:#fff;border-top-color:var(--green)}
+.light .card h3{color:var(--green)}
+.light .card p{color:#2E4157}
+.pill{background:var(--green);color:#fff;border-radius:3px;padding:18px;text-align:center;font-weight:700}
+.row4{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin:0 0 36px}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.panel{background:var(--navy);border:1px solid #16263B;padding:28px}
+.panel h3{margin:0 0 12px;color:var(--cyan);font-size:18px}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;list-style:none;padding:0;margin:0 0 28px;counter-reset:s}
+.steps li{counter-increment:s;background:var(--navy);border:1px solid #16263B;border-top:3px solid var(--teal);padding:20px 18px}
+.steps li::before{content:counter(s);display:block;font-size:28px;font-weight:800;color:var(--teal);margin-bottom:4px}
+.steps h3{margin:0 0 10px;font-size:16px}
+.banner{background:var(--green);border:1px solid var(--cyan);text-align:center;padding:16px;font-weight:700}
+blockquote{margin:0 0 24px;padding:6px 0 6px 22px;border-left:4px solid var(--cyan);font-size:clamp(20px,3vw,28px);font-weight:700;line-height:1.35}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}
+.chips span{border:1px solid var(--line);padding:8px 16px;border-radius:2px;font-size:14px;font-weight:500}
+.contact p{margin:0 0 8px;font-size:15px;color:var(--muted)}.contact b{color:var(--text)}
+footer{border-top:1px solid #16263B;padding:28px 0 36px;color:var(--muted);font-size:13px}
+@media(max-width:900px){nav ul{display:none}.metrics .wrap{grid-template-columns:1fr 1fr}.metric:nth-child(3){border-left:0}.g3,.g4,.g5,.split,.steps{grid-template-columns:1fr}.row4{grid-template-columns:1fr 1fr}section{padding:60px 0}.hero{padding:60px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
+</head>
+<body>
+<div class="band"></div>
+<nav><div class="wrap"><a class="logo" href="#top"><b><i></i>NETZLINE</b><small>POWERING A SMARTER TOMORROW</small></a>
+<ul><li><a href="#services">Services</a></li><li><a href="#datacentre">Data centres</a></li><li><a href="#electrical">Electrical</a></li><li><a href="#approach">Our approach</a></li><li><a href="#about">About</a></li></ul>
+<a class="btn" href="#contact">Contact us</a></div></nav>
+
+<header class="hero" id="top"><div class="wrap">
+<svg class="rings" viewBox="0 0 400 400" fill="none" stroke="#22D3EE" stroke-width="1" aria-hidden="true"><circle cx="200" cy="200" r="40"/><circle cx="200" cy="200" r="90" stroke="#14A38B"/><circle cx="200" cy="200" r="140"/><circle cx="200" cy="200" r="190" stroke="#2563EB"/><circle cx="200" cy="60" r="5" fill="#22D3EE"/><circle cx="321" cy="270" r="5" fill="#14A38B"/><circle cx="79" cy="270" r="5" fill="#2563EB"/></svg>
+<h1>On time and on budget, from design to handover.</h1>
+<p class="sub">Engineering Consultant &amp; Contractors</p>
+<p>Data centre and facility professional services, electrical contracting and maintenance, delivered end to end from Accra, Ghana.</p>
+<div class="cta"><a class="btn" href="#contact">Talk to our engineers</a><a class="btn ghost" href="#services">Explore services</a></div>
+</div></header>
+
+<div class="metrics"><div class="wrap">
+<div class="metric"><b>5 racks to 5 MW</b><span>Project range, from small rooms to co-location campuses</span></div>
+<div class="metric"><b>20 kW +</b><span>High density racks deployed</span></div>
+<div class="metric"><b>Ghana, India, Africa</b><span>Turnkey data centres delivered</span></div>
+<div class="metric"><b>BIM Level 3</b><span>Compliant 3D collaboration</span></div>
+</div></div>
+
+<section id="services"><div class="wrap">
+<h2>Areas of operation</h2>
+<p class="lead">Consultancy, contracting, facilities, maintenance and supply from one team.</p>
+<div class="grid g5">
+<div class="card"><h3>Consultancy</h3><ul class="tick"><li>Electrical consultants</li><li>MEP design</li><li>Efficient layout planning</li><li>Budget estimation</li><li>Electrical solutions</li></ul></div>
+<div class="card"><h3>Engineers and contractors</h3><ul class="tick"><li>Complete turnkey projects:</li><li>Electrical (HV/LV)</li><li>Fire fighting</li><li>Fabrication</li><li>Pipeline engineering</li><li>Networking</li></ul></div>
+<div class="card"><h3>Facilities management</h3><ul class="tick"><li>Property valuation</li><li>Waste management</li><li>Window, glass and blinds cleaning</li><li>Pest control and fumigation</li><li>Fixing of workstations</li></ul></div>
+<div class="card"><h3>Maintenance</h3><ul class="tick"><li>Annual maintenance contracts</li><li>Comprehensive and non-comprehensive AMCs</li><li>Preventive maintenance</li><li>Breakdown maintenance</li></ul></div>
+<div class="card"><h3>Supply</h3><ul class="tick"><li>Transformers and VCBs</li><li>Power cables</li><li>Generators and D.G. sets</li><li>AVR</li><li>UPS and inverters</li><li>Rectifiers</li><li>Lighting and more</li></ul></div>
+</div></div></section>
+
+<section class="light" id="datacentre"><div class="wrap">
+<h2>Data centre professional services</h2>
+<p class="lead">Support, expertise and management through the entire life-cycle of your critical facility. Critical infrastructure: consultancy, design, engineering, 3D/BIM, CFD, audit and commissioning.</p>
+<div class="grid g4">
+<div class="card"><h3>Data centre certification</h3></div>
+<div class="card"><h3>Infrastructure audit and operations efficiency</h3><p>Site audits, single points of failure reports, Uptime Institute gap analysis and energy efficiency.</p></div>
+<div class="card"><h3>Design and consultancy</h3><p>Feasibility review, business case, road map, 3D master planning, site selection and 10-year TCO modelling.</p></div>
+<div class="card"><h3>3D modelling, BIM and CFD</h3><p>Coordinated models and in-house cooling simulation before construction.</p></div>
+<div class="card"><h3>Design peer review</h3><p>Independent engineering advice on specification, buildability and operations.</p></div>
+<div class="card"><h3>Site quality assurance</h3><p>Drawing review, submittal evaluation, program management and snagging reports.</p></div>
+<div class="card"><h3>Testing and commissioning</h3><p>SATs, integrated systems testing (IST) and ASHRAE levels L1 to L5.</p></div>
+<div class="card"><h3>Documentation and operation</h3><p>O&amp;M manuals, SOPs, EOPs, MOPs and training for a quality handover.</p></div>
+</div>
+<div style="height:40px"></div>
+<div class="row4"><div class="pill">Practical</div><div class="pill">Buildable</div><div class="pill">Manageable</div><div class="pill">Maintainable</div></div>
+<p style="max-width:48em;margin:0">As a vendor neutral data centre specialist, our methodology covers projects from basic 5 rack rooms to complex 5 MW co-location campuses, with high density racks (20 kW +), innovative cooling and IP-BUS rotary UPS systems. We offer design and consultancy throughout Ghana and globally, so your critical facility is practical in design and easy to manage and maintain for its full life.</p>
+</div></section>
+
+<section id="electrical"><div class="wrap">
+<h2>Our expertise in the electrical sector</h2>
+<p class="lead">High tension and low tension systems, installed, tested and maintained.</p>
+<div class="split">
+<div class="panel"><h3>H.T side</h3><ul class="tick"><li>High tension line work up to 11 kV</li><li>Overhead and underground independent feeder lines</li><li>Power transformers, VCBs, H.T and metering panels</li><li>H.T cable joints with heat shrinkable kits</li><li>UPS, AVR and generator supply and installation</li><li>Capacitor banks, iso transformers, phase sequence correctors</li><li>Low and medium voltage panels</li></ul></div>
+<div class="panel"><h3>L.T side and general works</h3><ul class="tick"><li>L.T, distribution, MCC, PCC, HVAC, firefighting and lighting panels</li><li>Bus bar trunking, bus duct and rising mains</li><li>L.T XLPE/PVC cabling and cable management</li><li>Maintenance free chemical earthing</li><li>Internal and external wiring and lighting, high mast lighting</li><li>Lightning protection systems</li><li>Fire alarm and suppression, D.G. set synchronization</li></ul></div>
+</div></div></section>
+
+<section class="light" id="approach"><div class="wrap">
+<h2 style="color:var(--navy)">Our Closed Loop Approach</h2>
+<p class="lead">Five stages that keep every project centred on the customer.</p>
+<ol class="steps" style="color:var(--text)">
+<li><h3>Analysis</h3><ul class="tick"><li>Briefing</li><li>Onsite survey by Netzline engineers</li><li>Customer tailored solutions</li></ul></li>
+<li><h3>Consulting</h3><ul class="tick"><li>Product and system recommendation</li><li>Project proposal for optimization</li><li>Definition of mutual benefits</li></ul></li>
+<li><h3>Project management</h3><ul class="tick"><li>Documentation of targets</li><li>Scheduling and logistics</li><li>Timely delivery to site</li></ul></li>
+<li><h3>Implementation</h3><ul class="tick"><li>Erection and commissioning</li><li>Trial run until customer satisfaction</li><li>Employee training and project review</li></ul></li>
+<li><h3>Service support</h3><ul class="tick"><li>Continuous service by engineers on site</li><li>Upgrades on request</li><li>Annual maintenance contracts</li></ul></li>
+</ol>
+<div class="banner">All centres on you, the customer</div>
+</div></section>
+
+<section id="about"><div class="wrap">
+<blockquote>To be a company committed to “ON TIME &amp; ON BUDGET” delivery, guaranteed performance and offering end-to-end solutions to our customer.</blockquote>
+<p class="lead">Our vision is to be recognized as a leading contracting company in Africa, through our services as per customer satisfaction.</p>
+<h2>Why Netzline</h2>
+<div class="grid g4" style="margin-bottom:28px">
+<div class="card"><h3>Timely and versatile execution</h3></div>
+<div class="card"><h3>Qualified and experienced professionals</h3></div>
+<div class="card"><h3>Quality products and services</h3></div>
+<div class="card"><h3>Economy, efficiency, reliability and quick response</h3></div>
+<div class="card"><h3>Focused business approach</h3></div>
+<div class="card"><h3>Wide distribution network</h3></div>
+<div class="card"><h3>Competitive prices</h3></div>
+<div class="card"><h3>Quality management system with planned audits and reviews</h3></div>
+</div>
+<div class="chips"><span>Customer satisfaction</span><span>Teamwork</span><span>Productivity</span><span>Integrity</span><span>Leadership</span><span>Quality</span><span>Effective communication</span></div>
+</div></section>
+
+<section class="light" id="contact"><div class="wrap split contact">
+<div><h2>Feel free to contact us</h2><p class="lead" style="margin-bottom:24px">Tell us about your facility and we will advise on the right next step.</p>
+<a class="btn" href="mailto:info@netzlinetech.com?subject=Enquiry%20from%20netzlinetech.com">Email info@netzlinetech.com</a></div>
+<div class="panel" style="color:var(--text)"><h3>Netzline Tech-Systems Solutions Ltd</h3>
+<p><b>Office:</b> 1D/62-A, North Industrial Area, Greater Accra, Ghana</p>
+<p><b>Contact:</b> (+233) 0209419071</p>
+<p><b>Mobile:</b> (+233) 0244914214</p>
+<p><b>Website:</b> www.netzlinetech.com</p>
+<p><b>Head of marketing:</b> marketing.netzlinetech@gmail.com, (+233) 0244425214</p></div>
+</div></section>
+
+<footer><div class="wrap">© Netzline Tech-Systems Solutions Ltd. Engineering Consultant &amp; Contractors. All rights reserved.</div></footer>
+</body>
+</html>
